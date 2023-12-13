@@ -33,8 +33,77 @@
         
         <button>billetterie</button>
         <p>Oeuvres qui seront à l’exposition</p>
-    <footer>
 
+        <section>
+            <div class="carrousel" x-data="{hrefCourant: 1,}">
+                <div class="carrousel_picture">
+                    <div class="carrousel_button">
+                        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedent"  @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth; hrefCourant = Math.max(1, hrefCourant - 1)">
+                            <
+                        </button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"  @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth; hrefCourant = Math.min(5, hrefCourant + 1)">
+                            >
+                        </button>
+                    </div>
+                    <div class="carrousel_parent-ecrans" x-ref="parent">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
+                            </figure>
+                        </div>
+                        <div id="ecran-4" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
+                            </figure>
+                        </div>
+                        <div id="ecran-5" class="carrousel_ecran">
+                            <figure>
+                                <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <footer>
+        <p class="footer__p"><a class="footer__link" href="contact.html">Contactez-nous</a></p>
+        <p class="footer__p"><a class="footer__link" href="https://fondation-cartier.tickeasy.com/fr-FR/accueil">Billetterie</a></p>
+        <p class="footer__p">Mentions Légales</p>
+        <div class="menu--separation">
+            <span class="menu__barresep"></span>
+        </div>
+        <p class="footer__p">Suivez-nous</p>
+
+        <div class="footericon__container">
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/tiktok.svg" alt="tiktok icon">
+            </a>
+            
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/facebook.svg" alt="facebook icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/twitter.svg" alt="twitter icon">
+            </a>
+        
+            <a href="#">
+                <img class="menu__icon" src="../public/img/icons/instagram.svg" alt="instagram icon">
+            </a>
+
+            <a href="http://mmimontbeliard.com/">
+                <img class="menu__icon" src="../public/img/icons/MMI_dut_white_png.svg" alt="mmi icon">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
