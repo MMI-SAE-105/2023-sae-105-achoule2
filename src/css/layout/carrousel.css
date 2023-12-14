@@ -1,0 +1,47 @@
+.carrousel {
+    position: relative;
+}
+
+.carrousel_parent-ecrans{
+    display:flex;
+    overflow-x:hidden;
+    scroll-behavior:smooth;
+    scroll-snap-type:x mandatory;
+    gap: 10px;
+}
+
+.carrousel_ecran{
+    width:100%;
+    flex:none;
+    scroll-snap-align: start;
+}
+
+.carrousel_ecran img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+
+.carrousel_btn {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 2rem;
+    height: 2rem;
+    background: #474746;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--blanc);
+}
+
+.carrousel_btn-avant {
+    left: 2%;
+}
+  
+  .carrousel_btn-apres {
+    right: 2%;
+}

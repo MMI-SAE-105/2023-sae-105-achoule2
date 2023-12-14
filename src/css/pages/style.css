@@ -13,3 +13,5 @@
 /* Autre pages CSS */
 
 @import '/src/css/base/main.css';
+
+@import '/src/css/layout/carrousel.css';
