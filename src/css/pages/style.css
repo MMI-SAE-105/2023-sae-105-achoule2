@@ -3,3 +3,7 @@
 
 /* Variable CSS */
 @import '/src/css/utils/variables.css';
+
+/* Autre pages CSS */
+
+@import '/src/css/base/main.css';

@@ -15,7 +15,7 @@
         <!-- <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"> -->
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/menu.png" alt="icone menu">
         <!-- </button> -->
-        <nav id="mainNav" x-show="menuIsOpen" class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul @click="menuIsOpen = false">
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
                 <li><a class="menu__link" href="./chronologie_des_oeuvres.html">Frise des  oeuvres</a></li>
