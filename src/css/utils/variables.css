@@ -1,0 +1,15 @@
+:root {
+
+    /* Color styles */
+    --beige: #C8AD7F;
+    --marron: #7A5126;
+    --noir: #000000;
+    --orange: #FF5C00;
+    --btn-background: #575165;
+    
+    /* Text-size styles */
+    /* base size: lobster--two-30px (30px) */
+    --lexend-giga-20px: 1.3rem;
+    --lexend-14px: 0.9rem;
+    
+    }
