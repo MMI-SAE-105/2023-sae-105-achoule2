@@ -11,11 +11,9 @@
 <body>
     <header>
         <a href="index.html"><img src="/public/img/chaise.png" alt="icone retour Accueil"></a>
-        
-        <!-- <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"> -->
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/menu.png" alt="icone menu">
-        <!-- </button> -->
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <ul>
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
                 <li><a class="menu__link" href="./chronologie_des_oeuvres.html">Frise des  oeuvres</a></li>
@@ -34,10 +32,10 @@
             <p>Tarifs :</p>
         </div>
         <ul>
-            <li>Plein tarif ⇒ 11€</li>
-            <li>Tarif réduit ⇒ 7,50€</li>
-            <li>Réduction 13 - 25 ans ⇒ 5€</li>
-            <li>Fondation Cartier Pass ⇒ 18€ - 50€</li>
+            <li>Plein tarif ⇒ <span>11€</span></li>
+            <li>Tarif réduit ⇒ <span>7,50€</span></li>
+            <li>Réduction 13 - 25 ans ⇒ <span>5€</span></li>
+            <li>Fondation Cartier Pass ⇒ <span>18€ - 50€</span></li>
           </ul> 
             
         <p>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </p>

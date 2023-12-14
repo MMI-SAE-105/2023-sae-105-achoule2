@@ -11,18 +11,15 @@
 <body>
     <header>
         <a href="index.html"><img src="/public/img/chaise.png" alt="icone retour Accueil"></a>
-        
-        <!-- <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"> -->
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/menu.png" alt="icone menu">
-        <!-- </button> -->
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <img class="menu-croix" @click="menuIsOpen = false" src="/public/img/close.png" alt="fermeture menu">
             <ul>
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
                 <li><a class="menu__link" href="./chronologie_des_oeuvres.html">Frise des  oeuvres</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <div class="article_container" >       
             <div class="article article__artiste" role="tabpanel" x-show="ouvert === 1"> 
