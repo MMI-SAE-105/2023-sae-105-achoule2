@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/main.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
         <!-- <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"> -->
         <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/menu.png" alt="icone menu">
         <!-- </button> -->
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu" @click="menuIsOpen = !menuIsOpen">
             <ul>
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
                 <li><a class="menu__link" href="./chronologie_des_oeuvres.html">Frise des  oeuvres</a></li>
