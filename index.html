@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="//unpkg.com/alpinejs" defer></script>
     <title>Accueil</title>
 </head>
@@ -11,6 +10,16 @@
     <header>
         <img src="/public/img/chaise.png" alt="icone retour Accueil">
         <img src="/public/img/menu.png" alt="icone menu">
+        <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
+            menu
+        </button>
+        <h1>Test de menu</h1>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <ul>
+                <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
+                <li><a class="menu__link" href="./chronologie_des_oeuvres.html">Frise des  oeuvres</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <img src="/public/img/image-accueil.png" alt="image Accueil">
