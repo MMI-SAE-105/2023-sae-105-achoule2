@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<html lang="fr" x-data="{ menuIsOpen: false, txtIsOpen: 0 }" :class="{ noscroll: menuIsOpen }">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="/src/css/main.css">
     <title>Accueil</title>
 </head>
 <body>
     <header>
-        <img src="/public/img/chaise.png" alt="icone retour Accueil">
-        <img src="/public/img/menu.png" alt="icone menu">
-        <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
-            menu
-        </button>
+        <a href="index.html"><img src="/public/img/chaise.png" alt="icone retour Accueil"></a>
+        
+        <!-- <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn"> -->
+        <img aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn" src="/public/img/menu.png" alt="icone menu">
+        <!-- </button> -->
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
@@ -132,15 +133,3 @@
     </footer>
 </body>
 </html>
-
-<style>
-
-    header {
-        background-color: rgba(88, 41, 0, 0.7);
-    }
-
-/*     .tarifs {
-        display: flex;
-    } */
-
-</style>
