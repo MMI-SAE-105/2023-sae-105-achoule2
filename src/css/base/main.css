@@ -5,7 +5,9 @@
         align-items: center;
         padding: 10px;
     }
-
+.image-accueil {
+  width: 100%;
+}
     .menu {
           position: fixed; /* reste en place lors du défilement */
           top: 0; /* fixe le menu en haut de la page */
@@ -31,7 +33,10 @@
 
     footer {
         background-color: var(--marron);
+        display: flex; gap: 10px;
     }
+
+
 
     h1 {
       font-family: 'Lexend Giga', sans-serif;
@@ -58,88 +63,9 @@
 
     .carrousel {
       background-color: var(--beige);
+      display: flex;
     }
 
-    .carrousel_ecran img {
-      max-width: 100%; /* Ajuste la largeur maximale de l'image à 100% du conteneur */
-      height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
-    }
-
-    .carrousel {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .carrousel_parent-ecrans {
-      display: flex;
-      overflow-x: scroll;
-      scroll-behavior: smooth;
-      scroll-snap-type: x mandatory;
-      gap: 10px;
-      text-align: center;
-    }
-    
-    .carrousel_ecran {
-      scroll-snap-align: start;
+    .carrousel img {
       width: 100%;
-      flex: none;
-    }
-    
-    .carrousel_picture {
-      position: relative;
-      width: 600px;
-    }
-    
-    .carrousel_btn {
-      position: absolute;
-      top: 45%;
-      border-radius: 50%;
-      background: none;
-      border: none;
-      display: grid;
-      place-content: center;
-      color: #FFFFFF;
-      cursor: pointer;
-      font-size: 36px;
-    }
-    
-    .carrousel_btn-avant {
-      left: 0;
-    }
-    
-    .carrousel_btn-apres {
-      right: 0;
-    }
-    
-    .carrousel_liste-liens {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      border-radius: 5px;
-      gap: 1rem;
-    }
-    
-    .carrousel_liste-liens li {
-      padding: 10px 20px;
-      background-color: black;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 16px;
-      font-weight: bold;
-      border: 1px solid #fff;
-      border-radius: 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    
-    .carrousel_liste-liens a{
-      color: #fff;
-      font-family: Work Sans;
-      text-decoration: none;
-    }
-    .carrousel_liste-liens a.actif {
-      color: #E6C981;
     }
