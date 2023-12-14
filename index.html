@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false, txtIsOpen: 0 }" :class="{ noscroll: menuIsOpen }">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,6 @@
         <button aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen" class="header__menuBtn">
             menu
         </button>
-        <h1>Test de menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <ul>
                 <li><a class="menu__link" href="./charles_ray_eames.html">Charles et Ray Eames</a></li>
