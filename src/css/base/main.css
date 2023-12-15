@@ -16,7 +16,7 @@
           height: 100vh; /* hauteur de la fenêtre */
           background: var(--menu-background); /*couleur de fond */
           display: grid; /* grille (pour centrer) */
-          place-content: center; /* alignement au centre (V et H) */
+          place-content: top; /* alignement au centre (V et H) */
         }
         .header_menuBtn {
           position: relative; /* pour appliquer z-index */
@@ -33,19 +33,35 @@
 
     footer {
         background-color: var(--marron);
+        
+
     
     }
     .footericon__container {
       display: flex;
-      gap: 10px;
+      gap: 15px;
       justify-content: flex-end;
     }
+
     footer hr{
       border: 1px #fff solid;
-      width: 60%;
-      margin: 20px;
+      width: 90%;
+      margin: 10px;
 
     }
+
+    .footer__p{
+      color: #ffff;
+      margin: 10px;
+      
+    }
+    
+    .footer__link{
+      text-decoration: none;
+      color: #ffff;
+    }
+
+
 
     h1 {
       font-family: 'Lexend Giga', sans-serif;
