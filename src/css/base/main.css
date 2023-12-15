@@ -158,3 +158,13 @@ gap: 10px;
 .billetterie-btn-a {
   text-decoration: none;
 }
+
+.tarifs {
+  display: flex;
+  width: 20px;
+  height: 22px;
+  gap: 10px;
+  align-items: center;
+  white-space: nowrap;
+  margin-inline: 5%;
+}
