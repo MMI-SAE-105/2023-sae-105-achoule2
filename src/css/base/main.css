@@ -5,58 +5,75 @@
         align-items: center;
         padding: 10px;
     }
+
+    header ul {
+      list-style: none;
+    }
 .image-accueil {
   width: 100%;
 }
-    .menu {
-          position: fixed; /* reste en place lors du défilement */
-          top: 0; /* fixe le menu en haut de la page */
-          right: 0;
-          width: 100%; /* largeur de la fenêtre */
-          height: 100vh; /* hauteur de la fenêtre */
-          background: var(--menu-background); /*couleur de fond */
-        }
+.menu {
+  position: fixed; /* reste en place lors du défilement */
+  top: 0; /* fixe le menu en haut de la page */
+  right: 0;
+  width: 100%; /* largeur de la fenêtre */
+  height: 100vh; /* hauteur de la fenêtre */
+  background: var(--menu-background); /*couleur de fond */
+  z-index: 10; /* pour que le menu soit au dessus du reste */
+}
 
-        .header_menuBtn {
-          position: relative; /* pour appliquer z-index */
-          z-index: 10; /* pour que le bouton soit au dessus du menu */
-        }
-        .noscroll,
-        .noscrollbody {
-          overflow: hidden;
-        }
+.header_menuBtn {
+  position: relative; /* pour appliquer z-index */
+  z-index: 10; /* pour que le bouton soit au dessus du menu */
+}
+.noscroll,
+.noscrollbody {
+  overflow: hidden;
+}
 
-    .menu-croix {
-        width: 40px;
-        margin: 10px;
-        margin-left: 325px;
-    }
+.menu-croix {
+width: 40px;
+margin: 10px;
+margin-left: 325px;
+}
 
-    .menu__link {
-      text-decoration: none;
-      color: #fff;
-      font-family: 'Lexend', sans-serif;
-      font-size: 20px;
-    }
+.menu__link {
+display: flex;
+text-decoration: none;
+color: #fff;
+font-family: 'Lexend', sans-serif;
+font-size: 20px;
+margin-bottom: 10px;
+}
 
-    .menu-site {
-      display: flex;
-      align-items: center;
-      color: #fff;
-      justify-content: center;
-    }
+.menu-site {
+display: flex;
+align-items: center;
+color: #fff;
+justify-content: center;
+margin-bottom: -40px;
+margin-top: 50px;
+}
 
-    .menu-site-p {
-      font-size: 20px;
-    }
+.menu-site-p {
+font-size: 20px;
 
-    .menu-site-hr {
-      width: 90%;
-      height: 2px;
-      background-color: #fff;
-      margin-bottom: 50px;
-      margin-top: 50px;
-    }
+}
+
+.menu-site-hr {
+width: 90%;
+height: 1px;
+background-color: #fff;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+
+.menu-social {
+display: flex;
+justify-content: end;
+margin-right: 20px;
+gap: 10px;
+}
 
     footer {
         background-color: var(--marron);
